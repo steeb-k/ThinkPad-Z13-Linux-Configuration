@@ -20,7 +20,7 @@ However, the Nix package manager still works great on Arch!
 
 So, on to Fedora. Arch proved annoying, again. Whereas things were  always available, configuration and dependencies ended up being hellish. So, on to Fedora. 
 
-Configuring Howdy in Arch was fairly straightforward with some instructions form the Arch Wiki, but it was a different story in Fedora. After adding the howdy-beta COPR repo, installation was straightforward and face validation via sudo worked great - but it simply wouldn't work at the GDM login screen.   
+Configuring Howdy in Arch was fairly straightforward with some instructions form the Arch Wiki (which also broke on an update literally the next day), but it was a different story in Fedora. After adding the howdy-beta COPR repo, installation was straightforward and face validation via sudo worked great - but it simply wouldn't work at the GDM login screen.   
   
 The trick here was to setup an SELinux module as follows:
 
