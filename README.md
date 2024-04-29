@@ -123,4 +123,5 @@ sudo chmod +x /usr/share/power-profiles/performance.sh
 |✓ Nix configs make big changes easy |✓ AUR has almost everything|✓ Apt is *really* good|✓ LOTS of pre-compiled packages|
 |✗ Awful documentation|✗ Many packages need to be built from source|✗ Mostly replaced by Ubuntu, as far as broad support |✗ I don't like DNF|
 |✗ Least amount of community support |✗ Frequent system-breaking upgrades|✗ Just not as supported as Fedora|✓ Everything just works with very little adjustment|
+|✓ Snapshots are part of the core OS |✓ This is cowboy land|**-** Package manager is reliable |**-** Package manager is reliable |
 |✓ Most stable|✗ Least stable |✓ Most stable (on my servers)|✓ Supposedly very stable (my first rodeo w/ Fedora)|
