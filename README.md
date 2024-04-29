@@ -55,7 +55,9 @@ So, as mentioned earlier, all versions of the Linux kernel (with the bizarre exc
 
 ```
 #/etc/udev/rules.d/99-avoid-i2c-wakeup.rules
-
+```
+  
+```
 KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
 ```
 
