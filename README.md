@@ -81,7 +81,8 @@ Some smaller tweaks I added to change the power profile when the AC adapter is p
 ```
 #/etc/udev/rules.d/60-onbattery.rules  
 
-# Rule for when switching to battery SUBSYSTEM=="power_supply",ATTR{status}=="Discharging",ATTR{capacity_level}=="Normal",RUN+="/usr/share/power-profiles/power-saver.sh" 
+# Rule for when switching to battery
+SUBSYSTEM=="power_supply",ATTR{status}=="Discharging",ATTR{capacity_level}=="Normal",RUN+="/usr/share/power-profiles/power-saver.sh" 
 ```
 
 ```
