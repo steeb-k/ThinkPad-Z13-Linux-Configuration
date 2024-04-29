@@ -57,6 +57,14 @@ So, as mentioned earlier, all versions of the Linux kernel (with the bizarre exc
 KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
 ```
 
+**NixOS udev rule:** Things are a little different in NixOS, since you cannot just create a udev `*.rules` file. Add the following ot your `configuration.nix` file:
+
+```
+  services.udev.extraRules = ''
+    KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
+  '';
+```
+
 Source: [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Instantaneous_wakeups_from_suspend) / [archive.is](https://archive.is/Rup9g)
 
 ### What is this doing?
