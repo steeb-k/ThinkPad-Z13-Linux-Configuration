@@ -45,7 +45,7 @@ sudo semodule_package -o howdy.pp -m howdy.mod
 sudo semodule -i howdy.pp
 ```
 
-Source:  linuxreviews.org / archive.is
+Source:  [linuxreviews.org](https://linuxreviews.org/Howdy/SELinux) / [archive.is](https://archive.is/Kuv8L)
 
 ## Power Management Fixes (Suspend)
 
@@ -57,7 +57,7 @@ So, as mentioned earlier, all versions of the Linux kernel (with the bizarre exc
 KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
 ```
 
-Source: Arch Wiki / archive.is
+Source: [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Instantaneous_wakeups_from_suspend) / [archive.is](https://archive.is/Rup9g)
 
 ### What is this doing?
 
