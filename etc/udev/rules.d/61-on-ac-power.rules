@@ -1,0 +1,4 @@
+# Rule for when switching to battery 
+# Remember to make the script executable! 
+
+SUBSYSTEM=="power_supply",ATTR{status}=="Discharging",ATTR{capacity_level}=="Normal",RUN+="/usr/share/power-profiles/power-saver.sh" 
