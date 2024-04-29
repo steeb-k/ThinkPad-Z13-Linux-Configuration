@@ -49,6 +49,8 @@ Source:  [linuxreviews.org](https://linuxreviews.org/Howdy/SELinux) / [archive.i
 
 ## Power Management Fixes (Suspend)
 
+**As of April 2024, if you run a kernel newer than 6.0, chances are that you *NEED* this to have sleep work properly!**
+
 So, as mentioned earlier, all versions of the Linux kernel (with the bizarre exception of 6.5) would cause my laptop to occasionally fail to wake from sleep (or go into sleep - I never got this nailed down, since Nix made rolling back very very very simple.)  What seems to have worked (as of April 4, 2024):
 
 ```
