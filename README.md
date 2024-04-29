@@ -115,4 +115,11 @@ sudo chmod +x/usr/share/power-profiles/power-server.sh
 sudo chmod +x /usr/share/power-profiles/performance.sh
 ```
 
-## 
+# Pros and Cons
+
+| NixOS | Arch | Debian | Fedora |
+|------|------|------|------|
+|✓ Easily reproduced |✓ Excellent wiki |✓ Large package base |✓ Lots of official documentation|
+|✓ Nix configs make big changes easy |✓ AUR has almost everything|✓ Apt is *really* good|✓ LOTS of pre-compiled packages|
+|✗ Awful documentation|✗ Many packages need to be built from source|✗ Mostly replaced by Ubuntu, as far as broad support |✗ I don't like DNF|
+|✗ Least amount of community support |✗ Frequent system-breaking upgrades|✗ Just not as supported as Fedora|✓ Everything just works with very little adjustment|
