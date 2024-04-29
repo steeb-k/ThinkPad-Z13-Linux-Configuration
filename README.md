@@ -53,10 +53,9 @@ Source:  [linuxreviews.org](https://linuxreviews.org/Howdy/SELinux) / [archive.i
 
 So, as mentioned earlier, all versions of the Linux kernel (with the bizarre exception of 6.5) would cause my laptop to occasionally fail to wake from sleep (or go into sleep - I never got this nailed down, since Nix made rolling back very very very simple.)  What seems to have worked (as of April 4, 2024):
 
-```
-#/etc/udev/rules.d/99-avoid-i2c-wakeup.rules
-```
-  
+
+> /etc/udev/rules.d/99-avoid-i2c-wakeup.rules
+
 ```
 KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
 ```
