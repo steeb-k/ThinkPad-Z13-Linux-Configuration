@@ -1,1 +1,6 @@
-https://archive.is/Rup9g
+# Disable the ability of the trackpad to wake up the machine
+# i2c devices cause suspend problems with newer AMD-based laptops - in this case, the machine "wakes" up immediately after being put to sleep, but Wayland never restarts, causing it to overheat in my bag
+
+#source: https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Instantaneous_wakeups_from_suspend / https://archive.is/Rup9g
+
+KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
