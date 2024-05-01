@@ -73,7 +73,7 @@ Source: [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_an
 > **What is this doing?** `i2c-ELAN06A0:00` is the hardware address of the haptic trackpad. Apparently, it causes the laptop to occasionally wake from sleep immediately after being told to suspend. Between that and immediately jamming the laptop into my bag when I put it to sleep, I was creating an overheating issue. Theoretically, this will solve the issue.
 
 > [!TIP]
-> If you are visiting here from the future with a newer generation of Z13, or with some other AMD-based laptop with suspend issues, here's how to find *your* i2c problematic i2c device!
+> If you are visiting here from the future with a newer generation of Z13, or with some other AMD-based laptop with suspend issues, here's how to find *your* problematic i2c device!
 > 
 > `ls /sys/bus/i2c/devices/*/power/wakeup`
 > 
