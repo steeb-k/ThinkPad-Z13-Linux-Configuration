@@ -69,8 +69,8 @@ KERNEL=="i2c-ELAN06A0:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
 
 Source: [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Instantaneous_wakeups_from_suspend) / [archive.is](https://archive.is/Rup9g)
 
->[!TIP] What is this doing?
->
+>[!TIP]
+>What is this doing?
 >i2c-ELAN06A0:00 is the hardware address of the haptic trackpad. Apparently, it causes the laptop to occasionally wake from sleep immediately after being told to suspend. Between that and immediately jamming the laptop into my bag when I put it to sleep, I was creating an overheating issue. Theoretically, this will solve the issue.
 
 
