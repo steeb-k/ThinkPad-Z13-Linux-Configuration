@@ -74,8 +74,11 @@ Source: [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_an
 
 > [!TIP]
 > If you are visiting here from the future with a newer generation of Z13, or with some other AMD-based laptop with suspend issues, here's how to find *your* i2c problematic i2c device!
+> 
 > `ls /sys/bus/i2c/devices/*/power/wakeup`
+> 
 > The format of the device name should be i2c-ELAN0679:00 or i2c-MSFT0001:00. Run this command to block it from waking the system:
+> 
 > `sudo echo disabled > /sys/bus/i2c/devices/<device_name>/power/wakeup`
 
 
